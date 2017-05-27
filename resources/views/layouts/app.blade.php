@@ -19,7 +19,21 @@
 <body id = "app-layout">
 
    @include('layouts._admin._navadmin')
+   <main>
+     @if(Session::has('msg'))
+     <div  class="container">
+       <div class="row">
+         <div class="card {{Session::get('msg')['class']}}">
+           <div align="center" class="card-content">
+            {{Session::get('msg')['msg']}}
+           </div>
+         </div>
+       </div>
+     </div>
+     @endif
+   </main>
    @include('layouts._admin._footeradmin')
+   
 
     <!-- Scripts -->
     <script src="{{ asset('lib/jquery/dist/jquery.js') }}"></script>

@@ -19,14 +19,13 @@ Route::get('/contato', ['as'=>'site.contato', function () {
 	return view ('site.contato');
 }]);
 
+
+//////
 Route::get('/admin/login',['as'=>'admin.login',function(){
 	return view ('admin.login.index');
 }]);
 
 Route::post('/admin/login',['as'=>'admin.login','uses'=>'Admin\UsuarioController@login']);
-
-
-
 
 Route::get('/admin',['as'=>'admin.inicio',function(){
 	return view ('admin.inicio.index');
