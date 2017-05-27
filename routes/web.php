@@ -20,7 +20,7 @@ Route::get('/contato', ['as'=>'site.contato', function () {
 }]);
 
 
-//////
+////////
 Route::get('/admin/login',['as'=>'admin.login',function(){
 	return view ('admin.login.index');
 }]);
