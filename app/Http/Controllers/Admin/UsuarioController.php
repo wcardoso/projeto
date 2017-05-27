@@ -18,10 +18,11 @@ class UsuarioController extends Controller
 			return redirect()->route('admin.inicio');
 
 		}
-		
+
 		\Session::flash('msg',['msg'=>"Login ou Senha Inválidos",'class'=>'red white-text']);
 
 		return redirect()->route('admin.login');
 
 	}
+	
 }
