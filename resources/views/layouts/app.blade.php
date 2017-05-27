@@ -1,4 +1,4 @@
-  <!--Página Login admin-->
+  <!--Página Login admin APP-->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -17,8 +17,12 @@
     
 </head>
 <body id = "app-layout">
+<header>
 
-   @include('layouts._admin._navadmin')
+  @include('layouts._admin._navadmin')
+</header>
+
+   
    <main>
      @if(Session::has('msg'))
      <div  class="container">
@@ -32,8 +36,12 @@
      </div>
      @endif
    </main>
-   @include('layouts._admin._footeradmin')
+
+   <footer>
+      @include('layouts._admin._footeradmin')
    
+   </footer>
+  
 
     <!-- Scripts -->
     <script src="{{ asset('lib/jquery/dist/jquery.js') }}"></script>
