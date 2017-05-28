@@ -3,7 +3,9 @@
 
 @section('content')
 <div class="container">
-	<h2>Inicio</h2>
+	<h2 ><a href="{{route('admin.usuarios')}} ">Usuários</a></h2>
+
+
 	
 	
 </div>

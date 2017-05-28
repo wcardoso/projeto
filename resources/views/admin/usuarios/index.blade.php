@@ -37,15 +37,22 @@
 			<td>{{$usuario->cidade}}</td>
 			<td>{{$usuario->telefone}}</td>
 			<td>			
-			<a class="btn green" > <i class="material-icons">mode_edit </i></a>
-			<a class="btn red" > <i class="material-icons">delete </i></a>
+			<a class="btn green" href="{{route('admin.usuarios.editar',$usuario->id)}}" > <i class="material-icons">mode_edit </i></a>
+
+			<a class="btn red"  href="javascript: if(confirm('Vai deletar mesmo!?')){window.location.href = '{{route('admin.delet',$usuario->id)}}'}"> <i class="material-icons">delete </i></a>
 
 			</td>
 		</tr>
 		@endforeach
 	</tbody>
 </table>
+
 </div>
+<div class="row">
+	<a class ='btn blue '  class="center " href="{{route('admin.usuarios.add')}}"><i class="material-icons">perm_identity </i> Novo </a>
+</div>
+</div>
+
 </div>
 
 @endsection

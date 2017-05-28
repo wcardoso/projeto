@@ -19,6 +19,11 @@ Route::get('/contato', ['as'=>'site.contato', function () {
 	return view ('site.contato');
 }]);
 
+Route::get('/BuscaCep', ['as'=>'site.cep', function () {
+	return view ('site.cep');
+}]);
+
+
 
 ////////
 Route::get('/admin/login',['as'=>'admin.login',function(){
@@ -32,15 +37,28 @@ Route::post('/admin/login',['as'=>'admin.login','uses'=>'Admin\UsuarioController
 
 
 
+
+
 Route::group(['middleware'=>'auth'],function(){
-	
+
 	Route::get('/admin',['as'=>'admin.inicio',function(){
 	return view ('admin.inicio.index');
 }]);
 
 
 	Route::get('/admin/usuarios',['as'=>'admin.usuarios','uses'=>'Admin\UsuarioController@index']);
+
+	Route::get('/admin/usuarios/add',['as'=>'admin.usuarios.add','uses'=>'Admin\UsuarioController@add']);
+
+	Route::get('/admin/usuarios/editar/{id}',['as'=>'admin.usuarios.editar','uses'=>'Admin\UsuarioController@editar']);
+
+	Route::put('/admin/usuarios/atualizar/{id}',['as'=>'admin.usuarios.atualizar','uses'=>'Admin\UsuarioController@atualizar']);
 		
+	Route::post('/admin/usuarios/save',
+		['as'=>'admin.usuarios.save','uses'=>'Admin\UsuarioController@save']);
+		
+
+	Route::get('/admin/usuarios/deletar/{id}', ['as'=>'admin.delet','uses'=>'Admin\UsuarioController@deletar']);
 
 
 });
