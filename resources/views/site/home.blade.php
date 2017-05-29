@@ -4,7 +4,11 @@
 
 @section('content')
 
+
 @include('layouts._site._slides')
+
+
+
 
 <div class="container">
     <div class="row">
@@ -15,6 +19,6 @@
             </div>
         </div>
     </div>
-</div>
+
 
 @endsection

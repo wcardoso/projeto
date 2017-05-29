@@ -1,7 +1,10 @@
-   $( document ).ready(function(){
-       $(".button-collapse").sideNav();
-       $(".slider").slider({full_width:true});
-       });
+$(document).ready(function () {
+    // Plugin initialization
+    $('.slider').slider({fullWidth: true});
+})
+
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
+
 
 $( "#olho" ).mousedown(function() {
   $("#senha").attr("type", "text");

@@ -12,5 +12,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {//Habilitar classe pra criar usuário.
         $this->call(UserSeed::class);
+    	$this->call(FolhasSeeds::class);
     }
 }
