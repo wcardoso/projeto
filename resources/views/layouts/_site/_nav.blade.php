@@ -1,11 +1,3 @@
-     <!--Página Acesso Normal-->
-      <ul id="dropdown1" class="dropdown-content">
-                <li><a href="{{route('admin.login')}}"">Login</a></li>
-                <li><a href= "{{route('site.cep')}}">Encontre Seu Cep</a></li>
-                <li class="divider"></li>
-                
-        </ul>
-
     <nav>
         <div class="nav-wrapper pink darken-2 ">
             <div class="container">
@@ -28,3 +20,28 @@
         </div>
         </div>
     </nav>
+       <!--Página DropDown-->
+      <ul id="dropdown1" class="dropdown-content">
+                 <!-- Modal Trigger -->
+                <li><a href="#modal1">Login</a></li>
+                <li><a href= "{{route('site.cep')}}">Encontre Seu Cep</a></li>
+                <li class="divider"></li>
+                
+        </ul>
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal ">
+    <div class="modal-content" >
+      <h2 class="center ">Acessar</h2>
+      <form action="{{route('admin.login')}}" method="post" >
+      <!--Token Laravel, metodo de validação-->
+      {{csrf_field()}}
+      @include('admin.login._formu')
+     <button class=" modal-action modal-close waves-effect waves-green btn blue ">Entrar</button>
+    </form>
+    </div>
+  </div>
+
+      

@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('lib/materialize/dist/css/materialize.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
 
-    <title>TI</title> 
+    <title>Projeto</title> 
     
 </head>
 <body id = "app">

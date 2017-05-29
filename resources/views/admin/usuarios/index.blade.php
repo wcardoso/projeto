@@ -17,10 +17,10 @@
   </nav>
   </div>
 	
-	<div class="row">
-	<table>
+	<div class="row" >
+	<table class="highlight centered">
 		<thead>
-		<tr>
+		<tr >
 			<th>Nome</th>
 			<th>E-mail</th>
 			<th>Cidade</th>
@@ -49,7 +49,7 @@
 
 </div>
 <div class="row">
-	<a class ='btn blue '  class="center " href="{{route('admin.usuarios.add')}}"><i class="material-icons">perm_identity </i> Novo </a>
+	<a class ='btn blue '  class="center " href="{{route('admin.usuarios.add')}}"><i class="material-icons ">perm_identity </i> Novo </a>
 </div>
 </div>
 

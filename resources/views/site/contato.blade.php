@@ -5,15 +5,12 @@
 
 	<div class="container">
 	<div class="row section">
-		<h3 align="left">Contato</h3>
+		<h3 align="center">Contato</h3>
 		<div class="divider"></div>
 	</div>
-	<div class="row section">
-		<div class="col s12 m6">
-			
-		</div>
-	</div><!--Fim Row-->
-	<div class="col s12 m5">
+
+	<div class="row section">		
+	<div class="col s12 m5 right">
 	<form class="col s12">
 		<div class="input-field">
 			<input type="text" name="nome" class="validate">
@@ -29,18 +26,18 @@
 		<label>Mensagem</label>
 		</div>
 		
-			 <button class="btn waves-effect waves-light " type="submit" name="action">Enviar
-    		<i class="material-icons right">send</i>
- 		 </button>
- 		
-		
-		
-
-		
+		<button class="btn waves-effect waves-light " type="submit" name="action">Enviar
+    		<i class="material-icons right ">send</i>
+ 		 </button>		
 	</form>
 		
 	</div>
 
 	</div> <!--Fim Container-->
+	</div>
+
+
+
+          
 
 	@endsection
