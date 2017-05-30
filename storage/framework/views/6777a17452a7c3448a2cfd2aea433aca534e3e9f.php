@@ -9,11 +9,13 @@
 
     <ul class="right hide-on-med-and-down">
       <li><a href="<?php echo e(route('site.home')); ?>">Home</a></li>      
+      <li><a href="<?php echo e(route('admin.modelo')); ?>">Modelos</a></li>    
          
         
     </ul>
     <ul class="side-nav" id="mobile-demo">
     <li><a href="<?php echo e(route('admin.inicio')); ?> ">Home</a></li>
+    <li><a href="<?php echo e(route('admin.modelo')); ?>">Modelos</a></li>    
       
     </ul>
   </div>

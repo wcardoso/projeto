@@ -73,7 +73,7 @@ Route::group(['middleware'=>'auth'],function(){
 		['as'=>'admin.modelo.save','uses'=>'Admin\ModeloController@save']);
 		
 
-	Route::get('/admin/modelo/deletar/{id}', ['as'=>'admin.delet','uses'=>'Admin\ModeloController@deletar']);
+	Route::get('/admin/modelo/deletar/{id}', ['as'=>'admin.modelo.delet','uses'=>'Admin\ModeloController@deletar']);
 
 
 });

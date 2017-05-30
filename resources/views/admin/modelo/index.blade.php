@@ -22,7 +22,9 @@
 	<div class="row" >
 	<table class="highlight centered">
 		<thead>
-		<tr >
+		<tr>
+
+			<th>Id</th>
 			<th>Titulo</th>
 			
 			
@@ -33,6 +35,7 @@
 	<tbody>
 		@foreach ($registros as $registro)
 		<tr>
+			<td>{{$registro->id}}</td>		
 			<td>{{$registro->titulo}}</td>			
 			
 			
