@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('.slider').slider({fullWidth: true});
 })
 
-  $('.carousel.carousel-slider').carousel({fullWidth: true});
+
 
 
 $( "#olho" ).mousedown(function() {
