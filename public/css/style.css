@@ -9,6 +9,13 @@
     flex: 1 0 auto;
   }
 
+  img {
+  max-width:100%;
+}
+
+.parallax-container {
+      height: 500px;
+    }
 
  .slider .slides {
     background-color: transparent;
@@ -23,3 +30,4 @@
     background-size:100% auto;
     background-repeat: no-repeat;
 }
+
