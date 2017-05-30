@@ -60,5 +60,20 @@ Route::group(['middleware'=>'auth'],function(){
 
 	Route::get('/admin/usuarios/deletar/{id}', ['as'=>'admin.delet','uses'=>'Admin\UsuarioController@deletar']);
 
+//Rotas para Modelo------
+	Route::get('/admin/modelo',['as'=>'admin.modelo','uses'=>'Admin\ModeloController@index']);
+
+	Route::get('/admin/modelo/add',['as'=>'admin.modelo.add','uses'=>'Admin\ModeloController@add']);
+
+	Route::get('/admin/modelo/editar/{id}',['as'=>'admin.modelo.editar','uses'=>'Admin\ModeloController@editar']);
+
+	Route::put('/admin/modelo/atualizar/{id}',['as'=>'admin.modelo.atualizar','uses'=>'Admin\ModeloController@atualizar']);
+		
+	Route::post('/admin/modelo/save',
+		['as'=>'admin.modelo.save','uses'=>'Admin\ModeloController@save']);
+		
+
+	Route::get('/admin/modelo/deletar/{id}', ['as'=>'admin.delet','uses'=>'Admin\ModeloController@deletar']);
+
 
 });

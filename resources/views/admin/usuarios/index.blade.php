@@ -5,17 +5,7 @@
 	
 	<h2 class="center">Usuários</h2>	
 
-	<div class="row">
-	 <nav>
-    <div class="nav-wrapper green-text" >
-      <div class="col s12">
-        <a href="{{route('admin.inicio')}}" class="breadcrumb">Inicio</a>
-        <a href="#!" class="breadcrumb">Usuários</a>
-        
-      </div>
-    </div>
-  </nav>
-  </div>
+
 	
 	<div class="row" >
 	<table class="highlight centered">
