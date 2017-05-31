@@ -3,8 +3,8 @@
 
 <?php $__env->startSection('content'); ?>
 <div class="container">
-	<h2 ><a href="<?php echo e(route('admin.usuarios')); ?> ">Usuários</a></h2>
-
+	<h3><a href="<?php echo e(route('admin.usuarios')); ?> ">Usuários</a></h2>
+	<h3><a href="<?php echo e(route('admin.modelo')); ?>">Tipos Maquiagem</a></h3>    
 
 	
 	

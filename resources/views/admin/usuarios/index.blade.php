@@ -38,8 +38,14 @@
 </table>
 
 </div>
+
 <div class="row">
-	<a class ='btn blue '  class="center " href="{{route('admin.usuarios.add')}}"><i class="material-icons ">perm_identity </i> Novo </a>
+	<a class ='waves-effect waves-light btn blue '  class="center " href="{{route('admin.usuarios.add')}}"><i class="material-icons ">perm_identity </i> Novo </a>
+
+</div>
+<div class="row" >
+	<a class ='waves-effect waves-light btn'   href="{{route('admin.pdf')}}"><i class="material-icons">description</i> Relatório </a>
+	
 </div>
 </div>
 

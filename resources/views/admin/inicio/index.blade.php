@@ -3,8 +3,8 @@
 
 @section('content')
 <div class="container">
-	<h2 ><a href="{{route('admin.usuarios')}} ">Usuários</a></h2>
-
+	<h3><a href="{{route('admin.usuarios')}} ">Usuários</a></h2>
+	<h3><a href="{{route('admin.modelo')}}">Tipos Maquiagem</a></h3>    
 
 	
 	

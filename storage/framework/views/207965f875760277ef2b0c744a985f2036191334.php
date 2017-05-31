@@ -37,8 +37,14 @@
 </table>
 
 </div>
+
 <div class="row">
-	<a class ='btn blue '  class="center " href="<?php echo e(route('admin.usuarios.add')); ?>"><i class="material-icons ">perm_identity </i> Novo </a>
+	<a class ='waves-effect waves-light btn blue '  class="center " href="<?php echo e(route('admin.usuarios.add')); ?>"><i class="material-icons ">perm_identity </i> Novo </a>
+
+</div>
+<div class="row" >
+	<a class ='waves-effect waves-light btn  '  class="left " href="<?php echo e(route('admin.pdf')); ?>"><i class="material-icons">description</i> Relatório </a>
+	
 </div>
 </div>
 

@@ -32,6 +32,8 @@ Route::get('/admin/login',['as'=>'admin.login',function(){
 
 Route::post('/admin/login',['as'=>'admin.login','uses'=>'Admin\UsuarioController@login']);
 
+Route::get('/admin/usuarios/pdf',['as'=>'admin.pdf','uses'=>'Admin\PdfController@pdf']);
+
 
 
 
