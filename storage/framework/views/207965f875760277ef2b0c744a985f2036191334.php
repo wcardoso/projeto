@@ -43,7 +43,7 @@
 
 </div>
 <div class="row" >
-	<a class ='waves-effect waves-light btn  '  class="left " href="<?php echo e(route('admin.pdf')); ?>"><i class="material-icons">description</i> Relatório </a>
+	<a class ='waves-effect waves-light btn'   href="<?php echo e(route('admin.pdf')); ?>"><i class="material-icons">description</i> Relatório </a>
 	
 </div>
 </div>
