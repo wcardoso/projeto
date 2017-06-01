@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://phpprojeto.herokuapp.com/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -103,7 +103,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY','base64:/H/9PGS3ms1BbpmPCXxKRyRB4hJjE7msEug+bPqVNdU='),
 
     'cipher' => 'AES-256-CBC',
 
