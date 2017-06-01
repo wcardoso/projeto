@@ -14,8 +14,8 @@
             </ul>
             <ul class="side-nav" id="mobile-demo">
             <li><a href="{{route('site.home')}}">Home</a></li>
-            <li><a href="{{route('site.contato')}}"">Contato</a></li>
-            <li><a href="{{route('site.cep')}}"">CEP</a></li>
+            <li><a href="{{route('site.contato')}}">Contato</a></li>
+            <li><a href="{{route('site.cep')}}">CEP</a></li>
             <li><a href="{{route('admin.login')}}"">Login</a></li>
 
 
