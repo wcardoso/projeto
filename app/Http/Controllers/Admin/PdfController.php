@@ -16,6 +16,7 @@ class PdfController extends Controller
 		$usuario = User::all();
 		$pdf = PDF::loadView('admin\usuarios\pdf', ['usuario' => $usuario]);
 		return $pdf->stream('Relatório_Usuários.pdf');
+		$data=  date('d-m-Y');
 	}
     
 

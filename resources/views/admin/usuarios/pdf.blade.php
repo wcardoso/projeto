@@ -62,6 +62,7 @@ table th {
 		@endforeach
 	</tbody>
 </table>
+<
 
 </div>
 
