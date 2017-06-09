@@ -39,7 +39,7 @@ Route::get('/admin/usuarios/pdf',['as'=>'admin.pdf','uses'=>'Admin\PdfController
 
 
 
-
+//Grupo de rotas para proteção
 
 Route::group(['middleware'=>'auth'],function(){
 
@@ -59,7 +59,7 @@ Route::group(['middleware'=>'auth'],function(){
 	Route::post('/admin/usuarios/save',
 		['as'=>'admin.usuarios.save','uses'=>'Admin\UsuarioController@save']);
 		
-
+//Controller para deletar usuário
 	Route::get('/admin/usuarios/deletar/{id}', ['as'=>'admin.delet','uses'=>'Admin\UsuarioController@deletar']);
 
 //Rotas para Modelo------

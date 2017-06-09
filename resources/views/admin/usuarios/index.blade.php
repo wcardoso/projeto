@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<!--Index dos usuário-->
 
 <div class="container">
 	
@@ -20,6 +21,7 @@
 		</thead>
 	
 	<tbody>
+	<!--para cada usuários ele mostrará um usuário-->
 		@foreach ($usuarios as $usuario)
 		<tr>
 			<td>{{$usuario->name}}</td>
@@ -28,6 +30,7 @@
 			<td>{{$usuario->telefone}}</td>
 			<td>			
 			<a class="btn green" href="{{route('admin.usuarios.editar',$usuario->id)}}" > <i class="material-icons">mode_edit </i></a>
+			<!--Mostrar tela de confirmação de exclusão de usuário-->
 
 			<a class="btn red"  href="javascript: if(confirm('Vai deletar mesmo!?')){window.location.href = '{{route('admin.delet',$usuario->id)}}'}"> <i class="material-icons">delete </i></a>
 

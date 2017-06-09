@@ -1,5 +1,6 @@
   <!--Página Acesso Normal-->
 <!DOCTYPE html>
+<!--Chamo layout utilizando o include e abaixo o painel-->
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">    

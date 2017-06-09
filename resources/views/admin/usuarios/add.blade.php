@@ -7,6 +7,7 @@
 	  <div class="row">
   	<form action="{{route('admin.usuarios.save')}}" method="post">
   	{{csrf_field()}}
+    <!--Incluir formulário de usuários-->
   	@include('admin.usuarios._form')
   	<button class="btn blue ">Adicionar</button>
   	</form>

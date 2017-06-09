@@ -1,9 +1,11 @@
+<!--Painel de navegação-->
+
     <nav>
         <div class="nav-wrapper pink darken-2 ">
             <div class="container">
              <a href="{{route('site.home')}}" class="brand-logo">Projeto</a>
             
-
+<!--Recurso para mobile, responsividade-->
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
             <li><a href="{{route('site.home')}}">Home</a></li>

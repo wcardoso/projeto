@@ -6,12 +6,13 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Modelo;
 
-
+//Classe para realizar crud
 class ModeloController extends Controller
 {
     public function index()
 	{
 		$registros = Modelo::all();
+		//Traz apenas os registros
 			return view('admin.modelo.index',compact('registros'));
 	}
 
@@ -20,7 +21,7 @@ class ModeloController extends Controller
 	return view('admin.modelo.add');
 	}
 
-	
+	//realizar requisção, para salvar o titulo do modelo
 	public function save(Request $request)
 	{
 		$dados = $request->all();
@@ -29,6 +30,7 @@ class ModeloController extends Controller
 		$registro->save();
 
 		\Session::flash('msg',['msg'=>"Modelo Criado Com Sucesso.",'class'=>'green white-text']);
+		//retornar para rota
 
 		return redirect()->route('admin.modelo');
 

@@ -1,5 +1,5 @@
   <!--Página Acesso Normal-->
-
+<!--Chamo a parte superior do site-->
 @extends('layouts.site')
 
 
@@ -7,7 +7,7 @@
 
 
 @include('layouts._site._slides')
-
+<!--Chamo layout utilizando o include e abaixo o painel-->
 
 
 

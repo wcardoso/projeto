@@ -27,7 +27,7 @@ class UsuarioController extends Controller
 	}
 
 	public function index()
-	{
+	{//pegar todos os usuários e mostar
 		$usuarios = User::all();
 			return view('admin.usuarios.index',compact('usuarios'));
 	}
@@ -39,7 +39,7 @@ class UsuarioController extends Controller
 
 	
 	public function save(Request $request)
-	{
+	{//Salvar novo usuários
 		$dados = $request->all();
 		$usuario = new User();
 		$usuario->name = $dados['name'];
@@ -55,7 +55,7 @@ class UsuarioController extends Controller
 
 	}
 	public function editar($id)
-	{
+	{//Pesquisar usuário pelo id e depois chamar a view de ediçaõ
  		$usuario = User::find($id);
  		return view('admin.usuarios.editar', compact('usuario'));
 
@@ -64,9 +64,14 @@ class UsuarioController extends Controller
 	{
 		$usuario = User::find($id);
 		$dados = $request->all();
+		//ISSET Verifica se a variável é definida.
+		//Verificar tamnho da string password
+
+
 		if (isset($dados['password']) && strlen($dados['password']) > 5) {
 			# code...
 		}else{
+			//Caso não, será destruida com Unset
 			unset($dados['password']);
 	
 		}

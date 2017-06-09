@@ -1,6 +1,7 @@
 @extends('layouts.site')
 @section('content')
 
+
 <!DOCTYPE html>
  <head>
  

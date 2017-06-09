@@ -15,7 +15,6 @@
 	<input type="password" name="password" class="validate" onpaste="return false;" id="senha"  >
 	<label>Senha</label>
 
-<!--Modal-->
 
 
 
