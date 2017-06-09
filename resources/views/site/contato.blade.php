@@ -30,7 +30,7 @@
 		<i class="material-icons prefix">textsmss</i>
 		<textarea class="materialize-textarea"></textarea>
 		
-		<label>Mensagem</label>
+		<label>Mensagçem</label>
 		</div>
 		
 		<button class="btn waves-effect waves-light " type="submit" name="action">Enviar
