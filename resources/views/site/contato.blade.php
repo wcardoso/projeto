@@ -24,7 +24,7 @@
 		<i class="material-icons prefix">email</i>
 		<input type="email" name="email" class="validate">
 			<label>E-mail</label>
-			
+		<!--Grids-->	
 		</div>
 		<div class="input-field">
 		<i class="material-icons prefix">textsmss</i>
